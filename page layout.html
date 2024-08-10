@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Layout</title>
+    <style>
+        header {background-color: rgb(137, 195, 212);
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+        nav {float: left;
+            background-color: whitesmoke;
+            height: 300px;
+            width: 30%;
+        }
+        ul{list-style-type: none;
+            padding: 0;
+        }
+        article {background-color: lightgray;
+            color: black;
+            width: 70%;
+            float: left;
+            height: 300px;
+          
+        }
+        section::after {display: table;
+                        clear: both;
+                        content: " ";
+        }
+        footer {background-color: rgb(155, 236, 232);
+            color: white;
+            text-align: center;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Title</h1>
+    </header>
+    <section>
+      <nav>
+        <ul>
+          <li> <a href="">Home</a></li>
+          <li><a href="">Learn HTML</a></li>
+          <li><a href="">About Us</a></li>
+        </ul>
+      </nav>
+      <article>
+        <h1>HOME</h1>
+        <p>This is a home page.</p>
+      </article>
+    </section>
+   
+    <footer>
+        <h3>Footer</h3>
+    </footer>
+</body>
+</html>
